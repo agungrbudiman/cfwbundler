@@ -1,0 +1,16 @@
+{
+    "name": "tinwoo-installer",
+    "repos": "mrdude2478/TinWoo",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^TinWoo-Installer\\.zip$",
+            "action": "download"
+        },
+        {
+            "name": "^TinWoo-Installer\\.zip$",
+            "action": "extract"
+        }
+    ]
+}

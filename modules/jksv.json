@@ -1,0 +1,13 @@
+{
+    "name": "JKSV",
+    "repos": "J-D-K/JKSV",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^JKSV\\.nro$",
+            "action": "download",
+            "destination": "switch/JKSV.nro"
+        }
+    ]
+}

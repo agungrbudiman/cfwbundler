@@ -1,0 +1,13 @@
+{
+    "name": "tegra-explorer",
+    "repos": "suchmememanyskill/TegraExplorer",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^TegraExplorer\\.bin$",
+            "action": "download",
+            "destination": "bootloader/payloads/tegra-explorer.bin"
+        }
+    ]
+}

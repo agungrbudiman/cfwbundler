@@ -1,0 +1,25 @@
+{
+    "name": "atmosphere",
+    "repos": "Atmosphere-NX/Atmosphere",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^atmosphere.*\\.zip$",
+            "action": "download"
+        },
+        {
+            "name": "^atmosphere.*\\.zip$",
+            "action": "extract"
+        },
+        {
+            "name": "^fusee\\.bin$",
+            "action": "download",
+            "destination": "bootloader/payloads/fusee.bin"
+        },
+        {
+            "name": "^reboot_to_payload\\.nro$",
+            "action": "remove"
+        }
+    ]
+}

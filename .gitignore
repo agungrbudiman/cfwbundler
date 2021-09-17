@@ -1,0 +1,4 @@
+tmp/
+cfwbundler-package/
+*.zip
+.DS_Store

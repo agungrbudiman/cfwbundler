@@ -1,0 +1,13 @@
+{
+    "name": "hb-appstore",
+    "repos": "fortheusers/hb-appstore",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^appstore\\.nro$",
+            "action": "download",
+            "destination": "switch/appstore/appstore.nro"
+        }
+    ]
+}

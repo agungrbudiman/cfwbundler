@@ -1,0 +1,16 @@
+{
+    "name": "aio-updater",
+    "repos": "HamletDuFromage/aio-switch-updater",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^aio-switch-updater\\.zip$",
+            "action": "download"
+        },
+        {
+            "name": "^aio-switch-updater\\.zip$",
+            "action": "extract"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "mission-control",
+    "repos": "ndeadly/MissionControl",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^MissionControl.*\\.zip$",
+            "action": "download"
+        },
+        {
+            "name": "^MissionControl.*\\.zip$",
+            "action": "extract"
+        }
+    ]
+}

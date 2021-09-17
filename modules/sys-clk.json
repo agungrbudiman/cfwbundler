@@ -1,0 +1,16 @@
+{
+    "name": "sys-clk",
+    "repos": "retronx-team/sys-clk",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^sys-clk.*\\.zip$",
+            "action": "download"
+        },
+        {
+            "name": "^sys-clk.*\\.zip$",
+            "action": "extract"
+        }
+    ]
+}

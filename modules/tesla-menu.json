@@ -1,0 +1,16 @@
+{
+    "name": "tesla-menu",
+    "repos": "WerWolv/Tesla-Menu",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^ovlmenu\\.zip$",
+            "action": "download"
+        },
+        {
+            "name": "^ovlmenu\\.zip$",
+            "action": "extract"
+        }
+    ]
+}

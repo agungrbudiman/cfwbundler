@@ -1,0 +1,18 @@
+{
+    "name": "DBI",
+    "repos": "rashevskyv/dbi",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^DBI\\.nro$",
+            "action": "download",
+            "destination": "switch/DBI/DBI.nro"
+        },
+        {
+            "name": "^dbi\\.config$",
+            "action": "download",
+            "destination": "switch/DBI/dbi.config"
+        }
+    ]
+}

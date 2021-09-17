@@ -1,0 +1,21 @@
+{
+    "name": "hekate",
+    "repos": "CTCaer/hekate",
+    "version": "latest",
+    "active": true,
+    "assets": [
+        {
+            "name": "^hekate.*\\.zip$",
+            "action": "download"
+        },
+        {
+            "name": "^hekate.*\\.zip$",
+            "action": "extract"
+        },
+        {
+            "name": "^hekate.*\\.bin$",
+            "action": "move",
+            "destination": "boot.bin"
+        }
+    ]
+}
