@@ -12,6 +12,11 @@
         {
             "source": "README.md",
             "action": "remove"
+        },
+        {
+            "action": "toolbox",
+            "tid": "00FF0000636C6BFF",
+            "requires_reboot": true
         }
     ]
 }

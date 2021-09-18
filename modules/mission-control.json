@@ -8,6 +8,17 @@
         {
             "source": "MissionControl*.zip",
             "action": "extract"
+        },
+        {
+            "source": "config/MissionControl/missioncontrol.ini.template",
+            "action": "copy",
+            "destination": "config/MissionControl/missioncontrol.ini"
+        },
+        {
+            "source": "config/MissionControl/missioncontrol.ini",
+            "action": "replace",
+            "old": ";disable_sony_leds=false",
+            "new": "disable_sony_leds=true"
         }
     ]
 }

@@ -12,7 +12,7 @@
         {
             "source": "hekate*.bin",
             "action": "move",
-            "destination": "boot.bin"
+            "destination": "atmosphere/reboot_payload.bin"
         }
     ]
 }

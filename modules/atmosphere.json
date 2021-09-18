@@ -19,6 +19,10 @@
             "action": "remove"
         },
         {
+            "source": "atmosphere/reboot_payload.bin",
+            "action": "remove"
+        },
+        {
             "source": "atmosphere/config_templates/system_settings.ini",
             "action": "copy",
             "destination": "atmosphere/config/system_settings.ini"
