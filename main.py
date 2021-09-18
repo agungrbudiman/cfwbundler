@@ -34,11 +34,14 @@ for modulefile in Path('modules').iterdir():
                 shutil.copy(assetpath, modulepath)
 
         for action in module['actions']:
-            # iterate files
-            files = modulepath.rglob(action['source'])
-            file = next(files, None)
+            if not action['action'] == 'toolbox':
+                # iterate files
+                files = modulepath.rglob(action['source'])
+                file = next(files, None)
+            else:
+                file = Path(modulepath, 'atmosphere/contents', action['tid'], 'toolbox.json')
             
-            if not file == None:
+            if file != None:
                 print(file.relative_to(modulepath), end='')
                 if 'destination' in action:
                     destpath = Path(modulepath, action['destination'])
@@ -70,10 +73,21 @@ for modulefile in Path('modules').iterdir():
                 elif action['action'] == 'replace':
                     print(' -> replace')
                     new = file.read_text().replace(action['old'], action['new'])
-                    file.write_text(new)           
+                    file.write_text(new)
+                
+                elif action['action'] == 'toolbox':
+                    print(' -> toolbox')
+                    data = {
+                        "name": module['name'],
+                        "tid": action['tid'],
+                        "requires_reboot": action['requires_reboot']
+                    }
+                    file.write_text(json.dumps(data))
+
             else:
                 print(action['source'] + ' -> not found')
 
         shutil.copytree(modulepath, 'cfwbundler-package', dirs_exist_ok=True)
 shutil.make_archive('cfwbundler-package', 'zip', '.', 'cfwbundler-package')
 shutil.rmtree('.tmp', ignore_errors=True)
+shutil.rmtree('cfwbundler-package', ignore_errors=True)
