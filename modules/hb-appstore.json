@@ -3,10 +3,11 @@
     "repos": "fortheusers/hb-appstore",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^appstore\\.nro$" ],
+    "actions": [
         {
-            "name": "^appstore\\.nro$",
-            "action": "download",
+            "source": "appstore.nro",
+            "action": "move",
             "destination": "switch/appstore/appstore.nro"
         }
     ]

@@ -3,10 +3,11 @@
     "repos": "shchmue/Lockpick_RCM",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^Lockpick_RCM\\.bin$" ],
+    "actions": [
         {
-            "name": "^Lockpick_RCM\\.bin$",
-            "action": "download",
+            "source": "Lockpick_RCM.bin",
+            "action": "move",
             "destination": "bootloader/payloads/lockpick-rcm.bin"
         }
     ]

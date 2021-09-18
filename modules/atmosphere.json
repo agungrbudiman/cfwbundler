@@ -3,23 +3,36 @@
     "repos": "Atmosphere-NX/Atmosphere",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^atmosphere.*\\.zip$", "^fusee\\.bin$" ],
+    "actions": [
         {
-            "name": "^atmosphere.*\\.zip$",
-            "action": "download"
-        },
-        {
-            "name": "^atmosphere.*\\.zip$",
+            "source": "atmosphere*.zip",
             "action": "extract"
         },
         {
-            "name": "^fusee\\.bin$",
-            "action": "download",
+            "source": "fusee.bin",
+            "action": "move",
             "destination": "bootloader/payloads/fusee.bin"
         },
         {
-            "name": "^reboot_to_payload\\.nro$",
+            "source": "switch/reboot_to_payload.nro",
             "action": "remove"
+        },
+        {
+            "source": "atmosphere/config_templates/system_settings.ini",
+            "action": "copy",
+            "destination": "atmosphere/config/system_settings.ini"
+        },
+        {
+            "source": "atmosphere/config_templates/system_settings.ini",
+            "action": "copy",
+            "destination": "atmosphere/config/system_settings.ini"
+        },
+        {
+            "source": "atmosphere/config/system_settings.ini",
+            "action": "replace",
+            "old": "; dmnt_cheats_enabled_by_default = u8!0x1",
+            "new": "dmnt_cheats_enabled_by_default = u8!0x0"
         }
     ]
 }

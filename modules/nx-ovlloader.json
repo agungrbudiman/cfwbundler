@@ -3,13 +3,10 @@
     "repos": "WerWolv/nx-ovlloader",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^nx-ovlloader\\.zip$" ],
+    "actions": [
         {
-            "name": "^nx-ovlloader\\.zip$",
-            "action": "download"
-        },
-        {
-            "name": "^nx-ovlloader\\.zip$",
+            "source": "nx-ovlloader.zip",
             "action": "extract"
         }
     ]

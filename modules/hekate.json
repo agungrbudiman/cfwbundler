@@ -3,17 +3,14 @@
     "repos": "CTCaer/hekate",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^hekate.*\\.zip$" ],
+    "actions": [
         {
-            "name": "^hekate.*\\.zip$",
-            "action": "download"
-        },
-        {
-            "name": "^hekate.*\\.zip$",
+            "source": "hekate*.zip",
             "action": "extract"
         },
         {
-            "name": "^hekate.*\\.bin$",
+            "source": "hekate*.bin",
             "action": "move",
             "destination": "boot.bin"
         }

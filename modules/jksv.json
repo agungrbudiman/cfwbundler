@@ -3,10 +3,11 @@
     "repos": "J-D-K/JKSV",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^JKSV\\.nro$" ],
+    "actions": [
         {
-            "name": "^JKSV\\.nro$",
-            "action": "download",
+            "source": "JKSV.nro",
+            "action": "move",
             "destination": "switch/JKSV.nro"
         }
     ]

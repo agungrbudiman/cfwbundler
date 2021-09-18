@@ -3,13 +3,10 @@
     "repos": "HamletDuFromage/aio-switch-updater",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^aio-switch-updater\\.zip$" ],
+    "actions": [
         {
-            "name": "^aio-switch-updater\\.zip$",
-            "action": "download"
-        },
-        {
-            "name": "^aio-switch-updater\\.zip$",
+            "source": "aio-switch-updater.zip",
             "action": "extract"
         }
     ]

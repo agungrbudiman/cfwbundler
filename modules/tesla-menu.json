@@ -3,13 +3,10 @@
     "repos": "WerWolv/Tesla-Menu",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^ovlmenu\\.zip$" ],
+    "actions": [
         {
-            "name": "^ovlmenu\\.zip$",
-            "action": "download"
-        },
-        {
-            "name": "^ovlmenu\\.zip$",
+            "source": "ovlmenu.zip",
             "action": "extract"
         }
     ]

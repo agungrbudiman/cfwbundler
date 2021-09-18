@@ -3,10 +3,11 @@
     "repos": "WerWolv/ovl-sysmodules",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^ovlSysmodules\\.ovl$" ],
+    "actions": [
         {
-            "name": "^ovlSysmodules\\.ovl$",
-            "action": "download",
+            "source": "ovlSysmodules.ovl",
+            "action": "move",
             "destination": "switch/.overlays/ovlSysmodules.ovl"
         }
     ]

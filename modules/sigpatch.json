@@ -3,13 +3,10 @@
     "repos": "ITotalJustice/patches",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^fusee\\.zip$" ],
+    "actions": [
         {
-            "name": "^fusee\\.zip$",
-            "action": "download"
-        },
-        {
-            "name": "^fusee\\.zip$",
+            "source": "fusee.zip",
             "action": "extract"
         }
     ]

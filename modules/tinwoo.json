@@ -3,13 +3,10 @@
     "repos": "mrdude2478/TinWoo",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^TinWoo-Installer\\.zip$" ],
+    "actions": [
         {
-            "name": "^TinWoo-Installer\\.zip$",
-            "action": "download"
-        },
-        {
-            "name": "^TinWoo-Installer\\.zip$",
+            "source": "TinWoo-Installer.zip",
             "action": "extract"
         }
     ]

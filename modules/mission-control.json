@@ -3,13 +3,10 @@
     "repos": "ndeadly/MissionControl",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^MissionControl.*\\.zip$" ],
+    "actions": [
         {
-            "name": "^MissionControl.*\\.zip$",
-            "action": "download"
-        },
-        {
-            "name": "^MissionControl.*\\.zip$",
+            "source": "MissionControl*.zip",
             "action": "extract"
         }
     ]

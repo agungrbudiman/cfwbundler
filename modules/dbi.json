@@ -3,15 +3,16 @@
     "repos": "rashevskyv/dbi",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^DBI\\.nro$", "^dbi\\.config$" ],
+    "actions": [
         {
-            "name": "^DBI\\.nro$",
-            "action": "download",
+            "source": "DBI.nro",
+            "action": "move",
             "destination": "switch/DBI/DBI.nro"
         },
         {
-            "name": "^dbi\\.config$",
-            "action": "download",
+            "source": "dbi.config",
+            "action": "move",
             "destination": "switch/DBI/dbi.config"
         }
     ]

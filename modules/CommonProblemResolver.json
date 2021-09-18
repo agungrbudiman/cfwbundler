@@ -3,10 +3,11 @@
     "repos": "Team-Neptune/CommonProblemResolver",
     "version": "latest",
     "active": true,
-    "assets": [
+    "assets": [ "^CommonProblemResolver\\.bin$" ],
+    "actions": [
         {
-            "name": "^CommonProblemResolver\\.bin$",
-            "action": "download",
+            "source": "CommonProblemResolver.bin",
+            "action": "move",
             "destination": "bootloader/payloads/common-problem-resolver.bin"
         }
     ]
