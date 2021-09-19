@@ -1,5 +1,4 @@
 .tmp/
-cfwbundler-package/
-*.zip
+cfwbundler-package*
 .DS_Store
 .cache/

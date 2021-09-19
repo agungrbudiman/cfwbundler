@@ -1,0 +1,21 @@
+{
+    "name": "EdiZon-SE",
+    "repos": "tomvita/EdiZon-SE",
+    "version": "latest",
+    "active": true,
+    "assets": [ "^EdiZon\\.zip$" ],
+    "actions": [
+        {
+            "source": "EdiZon.zip",
+            "action": "extract"
+        },
+        {
+            "source": "atmosphere/contents/054e4f4558454000",
+            "action": "remove"
+        },
+        {
+            "source": "switch/breeze",
+            "action": "remove"
+        }
+    ]
+}

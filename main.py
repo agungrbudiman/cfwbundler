@@ -3,8 +3,10 @@ from pathlib import Path
 import json, re, shutil
 
 shutil.rmtree('cfwbundler-package', ignore_errors=True)
+shutil.rmtree('.tmp', ignore_errors=True)
+versions = []
 
-for modulefile in Path('modules').iterdir():
+for modulefile in sorted(Path('modules').iterdir()):
     module = json.loads(modulefile.read_text())
     if module['active'] == True:
         print('[' + module['name'] + ']')
@@ -19,6 +21,11 @@ for modulefile in Path('modules').iterdir():
 
         cachepath = Path('.cache', module['name'], release['tag_name'].replace('/',''))
         cachepath.mkdir(parents=True, exist_ok=True)
+
+        versions.append({
+            "module": module['name'],
+            "version": release['tag_name']
+        })
 
         regex = re.compile( '|'.join(module['assets']) )
         for remote in release['assets']:
@@ -82,7 +89,7 @@ for modulefile in Path('modules').iterdir():
                         "tid": action['tid'],
                         "requires_reboot": action['requires_reboot']
                     }
-                    file.write_text(json.dumps(data))
+                    file.write_text(json.dumps(data, indent=4))
 
             else:
                 print(action['source'] + ' -> not found')
@@ -91,3 +98,4 @@ for modulefile in Path('modules').iterdir():
 shutil.make_archive('cfwbundler-package', 'zip', '.', 'cfwbundler-package')
 shutil.rmtree('.tmp', ignore_errors=True)
 shutil.rmtree('cfwbundler-package', ignore_errors=True)
+Path('versions.json').write_text(json.dumps(versions, indent=4))

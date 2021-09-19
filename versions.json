@@ -1,0 +1,78 @@
+[
+    {
+        "module": "CommonProblemResolver",
+        "version": "v0.3.4"
+    },
+    {
+        "module": "aio-updater",
+        "version": "2.13.0"
+    },
+    {
+        "module": "atmosphere",
+        "version": "1.0.0"
+    },
+    {
+        "module": "breeze-beta",
+        "version": "beta18"
+    },
+    {
+        "module": "DBI",
+        "version": "330"
+    },
+    {
+        "module": "EdiZon-SE",
+        "version": "3.8.24"
+    },
+    {
+        "module": "hb-appstore",
+        "version": "2.2"
+    },
+    {
+        "module": "hekate",
+        "version": "v5.6.1"
+    },
+    {
+        "module": "JKSV",
+        "version": "09/01/2021"
+    },
+    {
+        "module": "lockpick-rcm",
+        "version": "v1.9.6"
+    },
+    {
+        "module": "mission-control",
+        "version": "v0.5.1"
+    },
+    {
+        "module": "Noexes",
+        "version": "1.4.155a"
+    },
+    {
+        "module": "nx-ovlloader",
+        "version": "v1.0.6"
+    },
+    {
+        "module": "ovl-sysmodules",
+        "version": "v1.2.2"
+    },
+    {
+        "module": "sigpatch",
+        "version": "12.1.0-1.0.0"
+    },
+    {
+        "module": "sys-clk",
+        "version": "1.0.1"
+    },
+    {
+        "module": "tegra-explorer",
+        "version": "4.0.1"
+    },
+    {
+        "module": "tesla-menu",
+        "version": "v1.1.4"
+    },
+    {
+        "module": "tinwoo-installer",
+        "version": "1.0.3"
+    }
+]

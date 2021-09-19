@@ -1,0 +1,21 @@
+{
+    "name": "breeze-beta",
+    "repos": "tomvita/Breeze-Beta",
+    "version": "latest",
+    "active": true,
+    "assets": [ "^Breeze.zip$" ],
+    "actions": [
+        {
+            "source": "Breeze.zip",
+            "action": "extract"
+        },
+        {
+            "source": "atmosphere",
+            "action": "remove"
+        },
+        {
+            "source": "switch/edizon",
+            "action": "remove"
+        }
+    ]
+}
