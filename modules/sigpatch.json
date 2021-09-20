@@ -1,7 +1,7 @@
 {
     "name": "sigpatch",
     "repos": "ITotalJustice/patches",
-    "version": "12.1.0-1.0.0",
+    "version": "latest",
     "active": true,
     "assets": [ "^fusee\\.zip$" ],
     "actions": [

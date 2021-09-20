@@ -1,7 +1,7 @@
 {
     "name": "atmosphere",
     "repos": "Atmosphere-NX/Atmosphere",
-    "version": "1.0.0",
+    "version": "latest",
     "active": true,
     "assets": [ "^atmosphere.*\\.zip$", "^fusee\\.bin$" ],
     "actions": [

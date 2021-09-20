@@ -12,6 +12,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Set output
+      id: vars
+      run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
     
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
@@ -40,5 +43,5 @@ jobs:
       with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./cfwbundler-package.zip
-          asset_name: cfwbundler-package.zip
+          asset_name: cfwbundler-package-${{ steps.vars.outputs.tag }}.zip
           asset_content_type: application/zip
