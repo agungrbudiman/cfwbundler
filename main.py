@@ -95,6 +95,7 @@ for modulefile in sorted(Path('modules').iterdir()):
                 print(action['source'] + ' -> not found')
 
         shutil.copytree(modulepath, 'cfwbundler-package', dirs_exist_ok=True)
+shutil.copytree('addons', 'cfwbundler-package', dirs_exist_ok=True)
 shutil.make_archive('cfwbundler-package', 'zip', '.', 'cfwbundler-package')
 shutil.rmtree('.tmp', ignore_errors=True)
 shutil.rmtree('cfwbundler-package', ignore_errors=True)
