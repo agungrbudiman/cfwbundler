@@ -1,9 +1,5 @@
 [
     {
-        "module": "CommonProblemResolver",
-        "version": "v0.3.4"
-    },
-    {
         "module": "aio-updater",
         "version": "2.13.0"
     },
@@ -14,6 +10,10 @@
     {
         "module": "breeze-beta",
         "version": "beta18"
+    },
+    {
+        "module": "CPR",
+        "version": "v0.3.4"
     },
     {
         "module": "DBI",
